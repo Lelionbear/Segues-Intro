@@ -1,24 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l7Y-iA-t4u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segues_Intro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOR-gu-LNI">
+                                <rect key="frame" x="120" y="499" width="175" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Segue Two"/>
+                                <connections>
+                                    <segue destination="vx3-Gj-o3z" kind="popoverPresentation" popoverAnchorView="tOR-gu-LNI" id="jRD-y4-shR">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o4-iO-WI6">
+                                <rect key="frame" x="120" y="351" width="175" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Segue One"/>
+                                <connections>
+                                    <segue destination="p0e-kK-Ynf" kind="show" id="vqc-Dq-Ybj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tOR-gu-LNI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Hdr-Av-jFC"/>
+                            <constraint firstItem="3o4-iO-WI6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Kqm-Sa-uRT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3o4-iO-WI6" secondAttribute="trailing" constant="119" id="ObY-BR-hQY"/>
+                            <constraint firstItem="tOR-gu-LNI" firstAttribute="top" secondItem="3o4-iO-WI6" secondAttribute="bottom" constant="102" id="S9v-GW-d1i"/>
+                            <constraint firstItem="3o4-iO-WI6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="263" id="eKf-ma-vSz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tOR-gu-LNI" secondAttribute="trailing" constant="119" id="q6S-nD-S9b"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sLV-Ks-dvj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
+        </scene>
+        <!--Destination View Controller-->
+        <scene sceneID="tBW-AD-6zu">
+            <objects>
+                <viewController id="vx3-Gj-o3z" customClass="DestinationViewController" customModule="Segues_Intro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Hu-19-VcX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graduationcap.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="acF-LK-mXp">
+                                <rect key="frame" x="143" y="188.5" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pt7-Jz-ahA"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HC9-yp-Wpc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UkL-jx-yaZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="890"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q7x-qG-11p">
+            <objects>
+                <viewController id="p0e-kK-Ynf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6uY-jE-NCL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msI-He-o0c">
+                                <rect key="frame" x="120" y="425" width="175" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Segue 2"/>
+                                <connections>
+                                    <segue destination="vx3-Gj-o3z" kind="popoverPresentation" identifier="Tony" popoverAnchorView="msI-He-o0c" id="tvN-fY-tjo">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WgX-yV-lIf"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="WgX-yV-lIf" firstAttribute="trailing" secondItem="msI-He-o0c" secondAttribute="trailing" constant="119" id="URy-vU-tfG"/>
+                            <constraint firstItem="msI-He-o0c" firstAttribute="top" secondItem="WgX-yV-lIf" secondAttribute="top" constant="337" id="k1g-58-16Y"/>
+                            <constraint firstItem="msI-He-o0c" firstAttribute="leading" secondItem="WgX-yV-lIf" secondAttribute="leading" constant="120" id="urH-5a-C1T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oY5-y8-uPX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkO-Aj-XdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iRO-Au-OyR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l7Y-iA-t4u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Yx-uo-09E">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yGg-zv-j4R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZL-ch-dFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jRD-y4-shR"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

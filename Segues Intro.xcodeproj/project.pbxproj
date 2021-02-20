@@ -15,6 +15,7 @@
 		25E750CD25D839AA00BDF509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E750CB25D839AA00BDF509 /* LaunchScreen.storyboard */; };
 		25E750D825D839AA00BDF509 /* Segues_IntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E750D725D839AA00BDF509 /* Segues_IntroTests.swift */; };
 		25E750E325D839AA00BDF509 /* Segues_IntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E750E225D839AA00BDF509 /* Segues_IntroUITests.swift */; };
+		25E750F425D8541D00BDF509 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E750F325D8541D00BDF509 /* DestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		25E750DE25D839AA00BDF509 /* Segues IntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Segues IntroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E750E225D839AA00BDF509 /* Segues_IntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues_IntroUITests.swift; sourceTree = "<group>"; };
 		25E750E425D839AA00BDF509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25E750F325D8541D00BDF509 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				25E750C925D839AA00BDF509 /* Assets.xcassets */,
 				25E750CB25D839AA00BDF509 /* LaunchScreen.storyboard */,
 				25E750CE25D839AA00BDF509 /* Info.plist */,
+				25E750F325D8541D00BDF509 /* DestinationViewController.swift */,
 			);
 			path = "Segues Intro";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				25E750C525D839A400BDF509 /* ViewController.swift in Sources */,
 				25E750C125D839A400BDF509 /* AppDelegate.swift in Sources */,
 				25E750C325D839A400BDF509 /* SceneDelegate.swift in Sources */,
+				25E750F425D8541D00BDF509 /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
